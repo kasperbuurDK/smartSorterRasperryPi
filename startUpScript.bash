@@ -24,3 +24,24 @@ sudo pigpiod    # start daemon
 ./x_pipe        # check pipe   I/F to daemon
 
 sudo killall pigpiod  #end pigpiod 
+
+
+
+#preparing for steppermotor library for c++
+
+cd ~
+mkdir stepperMotorDir && cd stepperMotorDir
+sudo apt-get install cmake
+sudo apt-get install git-core
+
+# Download the code
+git clone https://crish4cks@bitbucket.org/crish4cks/steppermotor.git
+
+# Build it!
+cd steppermotor/ 
+mkdir build && cd build
+cmake .. 
+make
+
+
+
