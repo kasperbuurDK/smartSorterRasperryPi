@@ -3,7 +3,8 @@
 #upgrade and update all
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade 
 sudo apt-get install cmake
-sudo apt-get install git-core
+sudo apt-get install git
+sudo apt-get install wiringpi
 
 # some setup and test forpigpio library
 sudo apt install python-setuptools python3-setuptools
