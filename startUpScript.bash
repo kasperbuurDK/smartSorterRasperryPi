@@ -1,7 +1,7 @@
 #!/usr/bin/env bash.
 
 #upgrade and update all
-printf("-------- Updating all ---------- ", \x1B[32m);
+echo '-------- Updating all ----------'
 
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade 
 sudo apt-get install cmake
