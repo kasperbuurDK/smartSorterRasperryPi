@@ -5,8 +5,8 @@ echo -------- python updated
 echo ------- cloning pigpio
 git clone https://github.com/joan2937/pigpio
 echo ------- cloned
-echo --------- cd pigpio-master 
-cd pigpio-master
+echo --------- cd pigpio 
+cd pigpio
 echo --------- make
 make
 echo --------- make install
