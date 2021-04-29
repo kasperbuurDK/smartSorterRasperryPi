@@ -7,12 +7,12 @@
 
 StepperControl::StepperControl() {
     positionCounter = 0;
-    positionReal = positionCounter % HOLES;
+    positionReal = positionCounter %HOLES;
 }
 
 int StepperControl::stepForward() { //TODO make it move steppermotor
     
-	for (int i = 0; i <= (512/2); i++)
+	for (int i = 0; i <= (FULLCIRCLE/HOLES); i++)
       {
          loop();
          step++;
@@ -67,7 +67,7 @@ return 0;
 
 int StepperControl::updatePosition(int value) {
     positionCounter +=value;
-    positionReal = positionCounter % HOLES;
+    positionReal = positionCounter %HOLES;
 
     return 0;
 }

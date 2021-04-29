@@ -2,12 +2,10 @@
 // Created by kaspe on 16-04-2021.
 //
 
-#ifndef SMARTLION_STEPPERCONTROL_H
-#define SMARTLION_STEPPERCONTROL_H
-
-
-#define HOLES 7
+#define FULLCIRCLE 2048
+#define HOLES 4
 #define STEP_DELAY 2000
+#define WAIT_BETWEEN_MOVES 600000
 
 #define Pin1 6
 #define Pin2 13
@@ -28,7 +26,3 @@ private:
     int updatePosition(int value);
 	int loop();
 };
-
-
-#endif //SMARTLION_STEPPERCONTROL_H
-
