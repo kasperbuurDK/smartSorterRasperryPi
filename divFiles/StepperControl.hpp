@@ -5,7 +5,7 @@
 #define FULLCIRCLE 2048
 #define HOLES 4
 #define STEP_DELAY 2000
-#define WAIT_BETWEEN_MOVES 600000
+#define WAIT_BETWEEN_MOVES 100000
 
 #define Pin1 6
 #define Pin2 13
